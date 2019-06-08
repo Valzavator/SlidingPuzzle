@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<scores>
+    <score>
+        <difficulty>Easy - Image</difficulty>
+        <name>sad</name>
+        <numberOfClick>37</numberOfClick>
+        <time>14</time>
+    </score>
+    <score>
+        <difficulty>Easy - Image</difficulty>
+        <name>dsf</name>
+        <numberOfClick>59</numberOfClick>
+        <time>32</time>
+    </score>
+    <score>
+        <difficulty>Easy - Image</difficulty>
+        <name>dsfsdf</name>
+        <numberOfClick>63</numberOfClick>
+        <time>25</time>
+    </score>
+</scores>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+    <boardType>ImageBoard</boardType>
+    <difficulty>Easy</difficulty>
+    <hardmode>true</hardmode>
+    <highlightButtons>true</highlightButtons>
+    <multiSwitch>true</multiSwitch>
+    <playSounds>true</playSounds>
+</settings>

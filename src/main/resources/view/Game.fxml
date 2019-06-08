@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="460.0" maxWidth="570.0" minHeight="460.0" minWidth="570.0" prefHeight="460.0" prefWidth="570.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controller.MainController">
+    <top>
+        <VBox prefHeight="25.0" prefWidth="555.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Game">
+                            <items>
+                        <MenuItem mnemonicParsing="false" onAction="#settingsButtonAction" text="Settings" />
+                        <MenuItem fx:id="newRandomImageButton" mnemonicParsing="false" onAction="#newRandomImageButtonAction" text="New random image" />
+                        <MenuItem mnemonicParsing="false" onAction="#highScoresButtonAction" text="High-scores" />
+                                <MenuItem mnemonicParsing="false" onAction="#closeButtonAction" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" onAction="#aboutButtonAction" text="About">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </VBox>
+    </top>
+    <padding>
+        <Insets bottom="10.0" />
+    </padding>
+    <right>
+        <VBox alignment="CENTER" prefHeight="415.0" prefWidth="125.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="0.0" prefWidth="100.0">
+                    <children>
+                        <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Count:  " textAlignment="CENTER" textOverrun="CLIP">
+                            <font>
+                                <Font name="Times New Roman Bold" size="22.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="countLabel" maxHeight="1.7976931348623157E308" text="0">
+                            <font>
+                                <Font name="Times New Roman Bold" size="22.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER" prefWidth="220.0">
+                    <children>
+                        <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Time:  " textAlignment="CENTER" textOverrun="CLIP">
+                            <font>
+                                <Font name="Times New Roman Bold" size="22.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="timeLabel" maxHeight="1.7976931348623157E308" text="0">
+                            <font>
+                                <Font name="Times New Roman Bold" size="22.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Button fx:id="undoButton" disable="true" focusTraversable="false" maxHeight="34.0" maxWidth="46.0" minHeight="46.0" minWidth="46.0" mnemonicParsing="false" onAction="#undoButtonAction" prefHeight="46.0" prefWidth="46.0" stylesheets="@../css/buttons.css">
+                            <cursor>
+                                <Cursor fx:constant="CLOSED_HAND" />
+                            </cursor>
+                            <styleClass>
+                                <String fx:value="defaultButton" />
+                                <String fx:value="undoButton" />
+                            </styleClass>
+                        </Button>
+                        <Button fx:id="redoButton" disable="true" focusTraversable="false" maxHeight="34.0" maxWidth="46.0" minHeight="46.0" minWidth="46.0" mnemonicParsing="false" onAction="#redoButtonAction" prefHeight="46.0" prefWidth="46.0" stylesheets="@../css/buttons.css">
+                            <cursor>
+                                <Cursor fx:constant="CLOSED_HAND" />
+                            </cursor>
+                            <styleClass>
+                                <String fx:value="defaultButton" />
+                                <String fx:value="redoButton" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="98.0" prefWidth="139.0">
+                    <children>
+                        <Button focusTraversable="false" mnemonicParsing="false" onAction="#restartButtonAction" stylesheets="@../css/buttons.css" text="Shuffle">
+                            <cursor>
+                                <Cursor fx:constant="CLOSED_HAND" />
+                            </cursor>
+                            <styleClass>
+                                <String fx:value="resetButton" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="227.0" prefHeight="98.0" prefWidth="139.0">
+               <children>
+                  <Button fx:id="pauseButton" disable="true" focusTraversable="false" mnemonicParsing="false" onAction="#pauseAction" styleClass="resetButton" stylesheets="@../css/buttons.css" text="Pause">
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets right="10.0" top="10.0" />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+    <center>
+        <GridPane fx:id="gamePane" alignment="CENTER" maxHeight="420.0" maxWidth="420.0" minHeight="420.0" minWidth="420.0" prefHeight="420.0" prefWidth="420.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="10.0" />
+            </BorderPane.margin>
+        </GridPane>
+    </center>
+</BorderPane>

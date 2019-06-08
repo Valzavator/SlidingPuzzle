@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="250.08700100814758" y="635.0">game.button.ButtonCache</node>
+    <node x="767.540302844578" y="105.0">game.button.states.DisabledState</node>
+    <node x="1448.8589245162548" y="1400.0">game.model.gameModel.GameIsOver</node>
+    <node x="762.2707807700524" y="1400.0">game.helpers.Timer</node>
+    <node x="618.540302844578" y="105.0">game.button.states.ActiveState</node>
+    <node x="476.8514188663854" y="730.0">game.board.GameBoard</node>
+    <node x="2217.117853087683" y="925.0">game.model.IObserver</node>
+    <node x="1989.4303530876832" y="1400.0">game.model.gameModel.GameIsStarted</node>
+    <node x="1532.144638801969" y="1175.0">game.model.gameModel.GameState</node>
+    <node x="772.540302844578" y="0.0">game.button.states.ButtonState</node>
+    <node x="1282.0621064426978" y="1070.0">game.gameContoller.command.CommandManager</node>
+    <node x="897.1732938663854" y="1070.0">game.gameContoller.command.SingleSwitch</node>
+    <node x="1384.6763630350097" y="1770.0">game.controller.MainController</node>
+    <node x="694.040302844578" y="220.0">game.button.ButtonPrototype</node>
+    <node x="986.5870010081477" y="1175.0">game.gameContoller.command.CommandCreator</node>
+    <node x="271.11538461538476" y="925.0">game.board.TextBoard</node>
+    <node x="795.9232938663854" y="435.0">game.helpers.stylesManager.IHighlight</node>
+    <node x="2201.430353087683" y="1175.0">game.model.SettingsModel</node>
+    <node x="116.11538461538476" y="925.0">game.board.ImageBoard</node>
+    <node x="248.5320512820515" y="1070.0">game.board.GameBoardCreator</node>
+    <node x="2265.930353087683" y="1070.0">game.model.Subject</node>
+    <node x="1185.179654280076" y="925.0">game.gameContoller.command.Command</node>
+    <node x="42.53700100814763" y="520.0">game.button.TextButton</node>
+    <node x="1393.1763630350097" y="1655.0">game.model.gameModel.GameModel</node>
+    <node x="623.9232938663854" y="520.0">game.helpers.stylesManager.StylesManager</node>
+    <node x="1073.1732938663854" y="1070.0">game.gameContoller.command.MultiSwitch</node>
+    <node x="270.2056073317575" y="435.0">game.button.ImageButton</node>
+    <node x="1815.4303530876832" y="1400.0">game.model.gameModel.GameIsWaiting</node>
+    <node x="921.7745010081476" y="1400.0">game.gameContoller.GameController</node>
+    <node x="1621.4303530876832" y="1400.0">game.model.gameModel.GameIsSuspended</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="game.gameContoller.command.SingleSwitch" target="game.board.GameBoard">
+      <point x="-51.0" y="-17.5" />
+      <point x="914.1732938663854" y="1050.0" />
+      <point x="745.7941489984242" y="1050.0" />
+      <point x="745.7941489984242" y="875.0" />
+      <point x="580.7576688663854" y="875.0" />
+      <point x="37.40625" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.Command" target="game.gameContoller.command.Command">
+      <point x="-55.55555555555554" y="17.5" />
+      <point x="1192.1240987245205" y="980.0" />
+      <point x="1165.179654280076" y="980.0" />
+      <point x="1165.179654280076" y="942.5" />
+      <point x="-62.5" y="-0.0" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsSuspended" target="game.button.ButtonPrototype">
+      <point x="57.99999999999977" y="-17.5" />
+      <point x="1766.4303530876832" y="1380.0" />
+      <point x="1770.9888681681432" y="1380.0" />
+      <point x="1770.9888681681432" y="325.0" />
+      <point x="835.9633797676549" y="325.0" />
+      <point x="59.923076923076906" y="17.5" />
+    </edge>
+    <edge source="game.board.TextBoard" target="game.button.ButtonPrototype">
+      <point x="-48.799999999999955" y="-17.5" />
+      <point x="283.3153846153848" y="815.0" />
+      <point x="32.03700100814763" y="815.0" />
+      <point x="32.03700100814763" y="325.0" />
+      <point x="716.1172259215011" y="325.0" />
+      <point x="-59.923076923076906" y="17.5" />
+    </edge>
+    <edge source="game.controller.MainController" target="game.controller.MainController">
+      <point x="0.0" y="17.5" />
+      <point x="1461.1763630350097" y="1825.0" />
+      <point x="1364.6763630350097" y="1825.0" />
+      <point x="1364.6763630350097" y="1787.5" />
+      <point x="-76.5" y="-0.0" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsSuspended" target="game.model.gameModel.GameModel">
+      <point x="43.49999999999977" y="17.5" />
+      <point x="1751.9303530876832" y="1545.0" />
+      <point x="1483.0335058921526" y="1545.0" />
+      <point x="21.85714285714289" y="-17.5" />
+    </edge>
+    <edge source="game.board.ImageBoard" target="game.button.ImageButton">
+      <point x="-27.0" y="-17.5" />
+      <point x="156.61538461538476" y="825.0" />
+      <point x="198.83700100814758" y="825.0" />
+      <point x="198.83700100814758" y="500.0" />
+      <point x="284.3056073317575" y="500.0" />
+      <point x="-56.39999999999998" y="17.5" />
+    </edge>
+    <edge source="game.helpers.stylesManager.IHighlight" target="game.button.ButtonPrototype">
+      <point x="0.0" y="-17.5" />
+      <point x="856.4232938663854" y="405.0" />
+      <point x="785.5018413061166" y="405.0" />
+      <point x="9.461538461538453" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.helpers.stylesManager.StylesManager">
+      <point x="-19.75" y="-17.5" />
+      <point x="981.0245010081476" y="1340.0" />
+      <point x="756.7941489984242" y="1340.0" />
+      <point x="756.7941489984242" y="615.0" />
+      <point x="759.8232938663855" y="615.0" />
+      <point x="60.39999999999998" y="17.5" />
+    </edge>
+    <edge source="game.controller.MainController" target="game.model.gameModel.GameModel">
+      <point x="21.85714285714289" y="-17.5" />
+      <point x="1483.0335058921526" y="1730.0" />
+      <point x="1506.509696368343" y="1730.0" />
+      <point x="45.33333333333326" y="17.5" />
+    </edge>
+    <edge source="game.board.ImageBoard" target="game.button.ButtonPrototype">
+      <point x="-54.0" y="-17.5" />
+      <point x="129.61538461538476" y="905.0" />
+      <point x="6.307692307692378" y="905.0" />
+      <point x="6.307692307692378" y="315.0" />
+      <point x="709.809533613809" y="315.0" />
+      <point x="-66.23076923076917" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.MultiSwitch" target="game.board.GameBoard">
+      <point x="-49.5" y="-17.5" />
+      <point x="1089.6732938663854" y="1000.0" />
+      <point x="1069.9070512820515" y="1000.0" />
+      <point x="1069.9070512820515" y="865.0" />
+      <point x="589.0701688663854" y="865.0" />
+      <point x="45.71875" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.board.GameBoard">
+      <point x="-51.0" y="-17.5" />
+      <point x="1410.1763630350097" y="1605.0" />
+      <point x="532.9874084249086" y="1605.0" />
+      <point x="532.9874084249086" y="905.0" />
+      <point x="539.1951688663854" y="905.0" />
+      <point x="-4.15625" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.IObserver">
+      <point x="46.14285714285711" y="-17.5" />
+      <point x="1507.3192201778668" y="1595.0" />
+      <point x="2150.930353087683" y="1595.0" />
+      <point x="2150.930353087683" y="1050.0" />
+      <point x="2232.242853087683" y="1050.0" />
+      <point x="-45.375" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.gameContoller.GameController">
+      <point x="-59.25" y="17.5" />
+      <point x="941.5245010081476" y="1455.0" />
+      <point x="901.7745010081476" y="1455.0" />
+      <point x="901.7745010081476" y="1417.5" />
+      <point x="-79.0" y="-0.0" />
+    </edge>
+    <edge source="game.board.GameBoard" target="game.board.GameBoard">
+      <point x="-62.34375" y="17.5" />
+      <point x="481.0076688663854" y="785.0" />
+      <point x="456.8514188663854" y="785.0" />
+      <point x="456.8514188663854" y="747.5" />
+      <point x="-66.5" y="-0.0" />
+    </edge>
+    <edge source="game.model.SettingsModel" target="game.model.SettingsModel">
+      <point x="-12.416666666666742" y="17.5" />
+      <point x="2263.5136864210167" y="1250.0" />
+      <point x="2161.430353087683" y="1250.0" />
+      <point x="2161.430353087683" y="1180.8333333333335" />
+      <point x="-74.5" y="-11.666666666666629" />
+    </edge>
+    <edge source="game.model.SettingsModel" target="game.model.Subject">
+      <point x="0.0" y="-17.5" />
+      <point x="2275.930353087683" y="1155.0" />
+      <point x="2305.305353087683" y="1155.0" />
+      <point x="-13.125" y="17.5" />
+    </edge>
+    <edge source="game.board.TextBoard" target="game.button.TextButton">
+      <point x="-24.399999999999977" y="-17.5" />
+      <point x="307.7153846153848" y="805.0" />
+      <point x="94.793890391187" y="805.0" />
+      <point x="94.793890391187" y="615.0" />
+      <point x="63.870334341481" y="615.0" />
+      <point x="-42.66666666666663" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsOver" target="game.model.gameModel.GameModel">
+      <point x="34.25" y="17.5" />
+      <point x="1551.6089245162548" y="1485.0" />
+      <point x="1453.8906487492955" y="1485.0" />
+      <point x="-7.285714285714221" y="-17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsOver" target="game.model.gameModel.GameState">
+      <point x="0.0" y="-17.5" />
+      <point x="1517.3589245162548" y="1380.0" />
+      <point x="1537.4779721353025" y="1380.0" />
+      <point x="-58.66666666666674" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.board.GameBoard">
+      <point x="-59.25" y="-17.5" />
+      <point x="941.5245010081476" y="1370.0" />
+      <point x="650.8708025687579" y="1370.0" />
+      <point x="650.8708025687579" y="905.0" />
+      <point x="555.8201688663854" y="905.0" />
+      <point x="12.46875" y="17.5" />
+    </edge>
+    <edge source="game.board.ImageBoard" target="game.board.ImageBoard">
+      <point x="-50.625" y="17.5" />
+      <point x="132.99038461538476" y="980.0" />
+      <point x="96.11538461538476" y="980.0" />
+      <point x="96.11538461538476" y="942.5" />
+      <point x="-67.5" y="-0.0" />
+    </edge>
+    <edge source="game.button.ButtonCache" target="game.button.ButtonCache">
+      <point x="-52.5" y="17.5" />
+      <point x="267.5870010081476" y="690.0" />
+      <point x="230.08700100814758" y="690.0" />
+      <point x="230.08700100814758" y="652.5" />
+      <point x="-70.0" y="-0.0" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsStarted" target="game.model.gameModel.GameState">
+      <point x="-18.875" y="-17.5" />
+      <point x="2046.0553530876832" y="1270.0" />
+      <point x="1654.8113054686355" y="1270.0" />
+      <point x="58.666666666666515" y="17.5" />
+    </edge>
+    <edge source="game.controller.MainController" target="game.button.ButtonPrototype">
+      <point x="-65.57142857142844" y="-17.5" />
+      <point x="1395.6049344635812" y="1750.0" />
+      <point x="0.0" y="1750.0" />
+      <point x="0.0" y="305.0" />
+      <point x="703.5018413061166" y="305.0" />
+      <point x="-72.53846153846155" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.helpers.Timer">
+      <point x="-36.42857142857133" y="-17.5" />
+      <point x="1424.7477916064383" y="1575.0" />
+      <point x="821.6457807700524" y="1575.0" />
+      <point x="11.875" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.SingleSwitch" target="game.button.ButtonPrototype">
+      <point x="-17.0" y="-17.5" />
+      <point x="948.1732938663854" y="395.0" />
+      <point x="791.8095336138088" y="395.0" />
+      <point x="15.769230769230717" y="17.5" />
+    </edge>
+    <edge source="game.button.ButtonCache" target="game.helpers.stylesManager.StylesManager">
+      <point x="61.25" y="-17.5" />
+      <point x="381.3370010081476" y="615.0" />
+      <point x="699.4232938663854" y="615.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="game.button.states.ButtonState" target="game.button.ButtonPrototype">
+      <point x="-58.625" y="17.5" />
+      <point x="780.915302844578" y="55.0" />
+      <point x="608.040302844578" y="55.0" />
+      <point x="608.040302844578" y="200.0" />
+      <point x="704.290302844578" y="200.0" />
+      <point x="-71.75" y="-17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.CommandCreator" target="game.gameContoller.command.MultiSwitch">
+      <point x="21.375" y="-17.5" />
+      <point x="1093.4620010081476" y="1145.0" />
+      <point x="1172.1732938663854" y="1145.0" />
+      <point x="33.0" y="17.5" />
+    </edge>
+    <edge source="game.button.ButtonPrototype" target="game.button.ButtonPrototype">
+      <point x="-78.84615384615387" y="17.5" />
+      <point x="697.1941489984242" y="275.0" />
+      <point x="674.040302844578" y="275.0" />
+      <point x="674.040302844578" y="237.5" />
+      <point x="-82.0" y="-0.0" />
+    </edge>
+    <edge source="game.controller.MainController" target="game.board.GameBoard">
+      <point x="-21.85714285714289" y="-17.5" />
+      <point x="1439.3192201778668" y="1730.0" />
+      <point x="524.6749084249086" y="1730.0" />
+      <point x="524.6749084249086" y="895.0" />
+      <point x="530.8826688663854" y="895.0" />
+      <point x="-12.46875" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.helpers.stylesManager.IHighlight">
+      <point x="-6.5833333333332575" y="-17.5" />
+      <point x="994.1911676748143" y="1330.0" />
+      <point x="886.6732938663854" y="1330.0" />
+      <point x="30.25" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.gameModel.GameIsWaiting">
+      <point x="26.71428571428578" y="-17.5" />
+      <point x="1487.8906487492955" y="1555.0" />
+      <point x="1853.9303530876832" y="1555.0" />
+      <point x="-38.5" y="17.5" />
+    </edge>
+    <edge source="game.button.states.ActiveState" target="game.button.ButtonPrototype">
+      <point x="32.25" y="17.5" />
+      <point x="715.290302844578" y="180.0" />
+      <point x="745.290302844578" y="180.0" />
+      <point x="-30.75" y="-17.5" />
+    </edge>
+    <edge source="game.board.GameBoard" target="game.button.ButtonPrototype">
+      <point x="-16.625" y="-17.5" />
+      <point x="526.7264188663854" y="710.0" />
+      <point x="540.6570512820515" y="710.0" />
+      <point x="540.6570512820515" y="395.0" />
+      <point x="760.2710720753473" y="395.0" />
+      <point x="-15.769230769230717" y="17.5" />
+    </edge>
+    <edge source="game.button.states.DisabledState" target="game.button.ButtonPrototype">
+      <point x="36.0" y="17.5" />
+      <point x="875.540302844578" y="170.0" />
+      <point x="786.290302844578" y="170.0" />
+      <point x="10.25" y="-17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.CommandManager" target="game.gameContoller.command.CommandManager">
+      <point x="-60.0" y="17.5" />
+      <point x="1312.0621064426978" y="1125.0" />
+      <point x="1262.0621064426978" y="1125.0" />
+      <point x="1262.0621064426978" y="1087.5" />
+      <point x="-90.0" y="-0.0" />
+    </edge>
+    <edge source="game.helpers.stylesManager.StylesManager" target="game.button.ButtonPrototype">
+      <point x="0.0" y="-17.5" />
+      <point x="699.4232938663854" y="415.0" />
+      <point x="772.8864566907318" y="415.0" />
+      <point x="-3.153846153846189" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.SettingsModel">
+      <point x="51.0" y="-17.5" />
+      <point x="1512.1763630350097" y="1605.0" />
+      <point x="2313.180353087683" y="1605.0" />
+      <point x="37.25" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.Subject">
+      <point x="60.71428571428578" y="-17.5" />
+      <point x="1521.8906487492955" y="1625.0" />
+      <point x="2379.0548069052284" y="1625.0" />
+      <point x="2379.0548069052284" y="1145.0" />
+      <point x="2357.805353087683" y="1145.0" />
+      <point x="39.375" y="17.5" />
+    </edge>
+    <edge source="game.helpers.stylesManager.StylesManager" target="game.helpers.stylesManager.IHighlight">
+      <point x="50.33333333333337" y="-17.5" />
+      <point x="749.7566271997189" y="500.0" />
+      <point x="826.1732938663854" y="500.0" />
+      <point x="-30.25" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsWaiting" target="game.model.gameModel.GameState">
+      <point x="0.0" y="-17.5" />
+      <point x="1892.4303530876832" y="1300.0" />
+      <point x="1633.4779721353025" y="1300.0" />
+      <point x="37.33333333333326" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.CommandCreator" target="game.board.GameBoard">
+      <point x="-64.125" y="-17.5" />
+      <point x="1007.9620010081477" y="1155.0" />
+      <point x="670.1833025687579" y="1155.0" />
+      <point x="670.1833025687579" y="885.0" />
+      <point x="572.4451688663854" y="885.0" />
+      <point x="29.09375" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameState" target="game.button.ButtonPrototype">
+      <point x="0.0" y="-17.5" />
+      <point x="1596.144638801969" y="335.0" />
+      <point x="829.6556874599628" y="335.0" />
+      <point x="53.61538461538464" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.CommandCreator" target="game.gameContoller.command.SingleSwitch">
+      <point x="-21.375" y="-17.5" />
+      <point x="1050.7120010081476" y="1145.0" />
+      <point x="965.1732938663854" y="1145.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="game.board.GameBoardCreator" target="game.board.TextBoard">
+      <point x="0.0" y="-17.5" />
+      <point x="338.0320512820515" y="1050.0" />
+      <point x="332.11538461538476" y="1050.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="game.button.ButtonCache" target="game.button.ImageButton">
+      <point x="-8.75" y="-17.5" />
+      <point x="311.3370010081476" y="615.0" />
+      <point x="314.5870010081476" y="615.0" />
+      <point x="314.5870010081476" y="500.0" />
+      <point x="312.5056073317576" y="500.0" />
+      <point x="-28.199999999999932" y="17.5" />
+    </edge>
+    <edge source="game.controller.MainController" target="game.model.IObserver">
+      <point x="65.57142857142867" y="-17.5" />
+      <point x="1526.7477916064383" y="1750.0" />
+      <point x="2397.858924516255" y="1750.0" />
+      <point x="2397.858924516255" y="1030.0" />
+      <point x="2322.992853087683" y="1030.0" />
+      <point x="45.375" y="17.5" />
+    </edge>
+    <edge source="game.button.ButtonCache" target="game.button.ButtonPrototype">
+      <point x="-26.25" y="-17.5" />
+      <point x="293.8370010081476" y="595.0" />
+      <point x="181.03700100814763" y="595.0" />
+      <point x="181.03700100814763" y="355.0" />
+      <point x="735.040302844578" y="355.0" />
+      <point x="-41.0" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.button.ButtonPrototype">
+      <point x="65.57142857142867" y="-17.5" />
+      <point x="1526.7477916064383" y="1635.0" />
+      <point x="2408.858924516255" y="1635.0" />
+      <point x="2408.858924516255" y="295.0" />
+      <point x="854.8864566907318" y="295.0" />
+      <point x="78.84615384615381" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.board.GameBoardCreator">
+      <point x="-60.71428571428578" y="-17.5" />
+      <point x="1400.462077320724" y="1625.0" />
+      <point x="377.9249084249087" y="1625.0" />
+      <point x="377.9249084249087" y="1155.0" />
+      <point x="293.2820512820515" y="1155.0" />
+      <point x="-44.75" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.gameContoller.command.CommandManager">
+      <point x="46.08333333333326" y="-17.5" />
+      <point x="1046.8578343414808" y="1350.0" />
+      <point x="1393.0685431689649" y="1350.0" />
+      <point x="1393.0685431689649" y="1155.0" />
+      <point x="1432.0621064426978" y="1155.0" />
+      <point x="60.0" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.CommandManager" target="game.gameContoller.command.Command">
+      <point x="-45.0" y="-17.5" />
+      <point x="1327.0621064426978" y="1050.0" />
+      <point x="1275.4574320578538" y="1050.0" />
+      <point x="27.77777777777783" y="17.5" />
+    </edge>
+    <edge source="game.controller.MainController" target="game.model.SettingsModel">
+      <point x="43.71428571428578" y="-17.5" />
+      <point x="1504.8906487492955" y="1740.0" />
+      <point x="2337.055353087683" y="1740.0" />
+      <point x="62.083333333333485" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.gameContoller.command.CommandCreator">
+      <point x="6.5833333333332575" y="-17.5" />
+      <point x="1007.3578343414808" y="1320.0" />
+      <point x="1029.3370010081476" y="1320.0" />
+      <point x="-42.75" y="17.5" />
+    </edge>
+    <edge source="game.button.ButtonPrototype" target="game.button.states.DisabledState">
+      <point x="-10.25" y="-17.5" />
+      <point x="765.790302844578" y="160.0" />
+      <point x="803.540302844578" y="160.0" />
+      <point x="-36.0" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.button.ButtonPrototype">
+      <point x="72.41666666666674" y="-17.5" />
+      <point x="1073.1911676748143" y="1370.0" />
+      <point x="1486.7843286649202" y="1370.0" />
+      <point x="1486.7843286649202" y="355.0" />
+      <point x="817.040302844578" y="355.0" />
+      <point x="41.0" y="17.5" />
+    </edge>
+    <edge source="game.model.Subject" target="game.model.IObserver">
+      <point x="-26.25" y="-17.5" />
+      <point x="2292.180353087683" y="1050.0" />
+      <point x="2262.492853087683" y="1050.0" />
+      <point x="-15.125" y="17.5" />
+    </edge>
+    <edge source="game.helpers.stylesManager.StylesManager" target="game.button.ImageButton">
+      <point x="-50.33333333333337" y="-17.5" />
+      <point x="649.0899605330521" y="490.0" />
+      <point x="397.1056073317575" y="490.0" />
+      <point x="56.39999999999998" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.MultiSwitch" target="game.gameContoller.command.MultiSwitch">
+      <point x="-33.0" y="17.5" />
+      <point x="1106.1732938663854" y="1125.0" />
+      <point x="1053.1732938663854" y="1125.0" />
+      <point x="1053.1732938663854" y="1087.5" />
+      <point x="-66.0" y="-0.0" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.gameModel.GameModel">
+      <point x="-45.333333333333314" y="17.5" />
+      <point x="1415.8430297016764" y="1710.0" />
+      <point x="1373.1763630350097" y="1710.0" />
+      <point x="1373.1763630350097" y="1672.5" />
+      <point x="-68.0" y="-0.0" />
+    </edge>
+    <edge source="game.board.GameBoardCreator" target="game.board.GameBoard">
+      <point x="59.66666666666663" y="-17.5" />
+      <point x="397.6987179487181" y="1050.0" />
+      <point x="412.36538461538476" y="1050.0" />
+      <point x="412.36538461538476" y="885.0" />
+      <point x="522.5701688663854" y="885.0" />
+      <point x="-20.78125" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.Command" target="game.button.ButtonPrototype">
+      <point x="15.625" y="-17.5" />
+      <point x="1263.304654280076" y="375.0" />
+      <point x="804.4249182291935" y="375.0" />
+      <point x="28.38461538461536" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.board.ImageBoard">
+      <point x="-65.57142857142867" y="-17.5" />
+      <point x="1395.604934463581" y="1635.0" />
+      <point x="200.49038461538476" y="1635.0" />
+      <point x="16.875" y="17.5" />
+    </edge>
+    <edge source="game.button.TextButton" target="game.button.ButtonPrototype">
+      <point x="-32.0" y="-17.5" />
+      <point x="74.53700100814763" y="500.0" />
+      <point x="108.11538461538476" y="500.0" />
+      <point x="108.11538461538476" y="335.0" />
+      <point x="722.4249182291935" y="335.0" />
+      <point x="-53.61538461538464" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.button.ImageButton">
+      <point x="-72.41666666666663" y="-17.5" />
+      <point x="928.3578343414811" y="1380.0" />
+      <point x="446.3514188663854" y="1380.0" />
+      <point x="446.3514188663854" y="500.0" />
+      <point x="368.90560733175744" y="500.0" />
+      <point x="28.199999999999932" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsStarted" target="game.button.ButtonPrototype">
+      <point x="18.875000000000114" y="-17.5" />
+      <point x="2083.805353087683" y="305.0" />
+      <point x="848.5787643830397" y="305.0" />
+      <point x="72.53846153846166" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsStarted" target="game.model.SettingsModel">
+      <point x="56.625" y="-17.5" />
+      <point x="2121.555353087683" y="1380.0" />
+      <point x="2288.34701975435" y="1380.0" />
+      <point x="12.416666666666515" y="17.5" />
+    </edge>
+    <edge source="game.board.ImageBoard" target="game.button.ButtonCache">
+      <point x="0.0" y="-17.5" />
+      <point x="183.61538461538476" y="835.0" />
+      <point x="237.10141886638542" y="835.0" />
+      <point x="237.10141886638542" y="710.0" />
+      <point x="302.5870010081476" y="710.0" />
+      <point x="-17.5" y="17.5" />
+    </edge>
+    <edge source="game.helpers.Timer" target="game.helpers.Timer">
+      <point x="-35.625" y="17.5" />
+      <point x="774.1457807700524" y="1455.0" />
+      <point x="742.2707807700524" y="1455.0" />
+      <point x="742.2707807700524" y="1417.5" />
+      <point x="-47.5" y="-0.0" />
+    </edge>
+    <edge source="game.model.gameModel.GameState" target="game.model.gameModel.GameModel">
+      <point x="-26.666666666666742" y="17.5" />
+      <point x="1569.4779721353025" y="1360.0" />
+      <point x="1601.216067373398" y="1360.0" />
+      <point x="1601.216067373398" y="1505.0" />
+      <point x="1463.6049344635812" y="1505.0" />
+      <point x="2.4285714285715585" y="-17.5" />
+    </edge>
+    <edge source="game.button.ImageButton" target="game.button.ButtonPrototype">
+      <point x="-35.25" y="-17.5" />
+      <point x="305.4556073317575" y="365.0" />
+      <point x="741.3479951522704" y="365.0" />
+      <point x="-34.69230769230762" y="17.5" />
+    </edge>
+    <edge source="game.button.ButtonPrototype" target="game.button.states.ActiveState">
+      <point x="-51.25" y="-17.5" />
+      <point x="724.790302844578" y="190.0" />
+      <point x="650.790302844578" y="190.0" />
+      <point x="-32.25" y="17.5" />
+    </edge>
+    <edge source="game.board.GameBoardCreator" target="game.board.ImageBoard">
+      <point x="-59.66666666666663" y="-17.5" />
+      <point x="278.36538461538487" y="1050.0" />
+      <point x="234.24038461538476" y="1050.0" />
+      <point x="50.625" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsWaiting" target="game.model.gameModel.GameModel">
+      <point x="38.5" y="17.5" />
+      <point x="1930.9303530876832" y="1565.0" />
+      <point x="1492.7477916064383" y="1565.0" />
+      <point x="31.57142857142867" y="-17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.gameModel.GameIsSuspended">
+      <point x="17.0" y="-17.5" />
+      <point x="1478.1763630350097" y="1535.0" />
+      <point x="1664.9303530876832" y="1535.0" />
+      <point x="-43.5" y="17.5" />
+    </edge>
+    <edge source="game.board.TextBoard" target="game.board.GameBoard">
+      <point x="24.399999999999977" y="-17.5" />
+      <point x="356.51538461538473" y="865.0" />
+      <point x="505.9451688663854" y="865.0" />
+      <point x="-37.40625" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsStarted" target="game.model.gameModel.GameModel">
+      <point x="37.750000000000114" y="17.5" />
+      <point x="2102.680353087683" y="1585.0" />
+      <point x="1502.462077320724" y="1585.0" />
+      <point x="41.28571428571422" y="-17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.MultiSwitch" target="game.gameContoller.command.Command">
+      <point x="49.5" y="-17.5" />
+      <point x="1188.6732938663854" y="1040.0" />
+      <point x="1247.679654280076" y="1040.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.gameContoller.GameController">
+      <point x="-17.0" y="-17.5" />
+      <point x="1444.1763630350097" y="1535.0" />
+      <point x="1060.0245010081476" y="1535.0" />
+      <point x="59.25" y="17.5" />
+    </edge>
+    <edge source="game.model.Subject" target="game.model.Subject">
+      <point x="-39.375" y="17.5" />
+      <point x="2279.055353087683" y="1125.0" />
+      <point x="2245.930353087683" y="1125.0" />
+      <point x="2245.930353087683" y="1087.5" />
+      <point x="-52.5" y="-0.0" />
+    </edge>
+    <edge source="game.board.TextBoard" target="game.button.ButtonCache">
+      <point x="0.0" y="-17.5" />
+      <point x="332.11538461538476" y="835.0" />
+      <point x="364.8514188663854" y="835.0" />
+      <point x="364.8514188663854" y="710.0" />
+      <point x="337.5870010081476" y="710.0" />
+      <point x="17.5" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.gameModel.GameState">
+      <point x="7.285714285714221" y="-17.5" />
+      <point x="1468.462077320724" y="1515.0" />
+      <point x="1606.0732102305406" y="1515.0" />
+      <point x="1606.0732102305406" y="1350.0" />
+      <point x="1580.144638801969" y="1350.0" />
+      <point x="-16.0" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.gameModel.GameIsOver">
+      <point x="-12.14285714285711" y="-17.5" />
+      <point x="1449.0335058921526" y="1475.0" />
+      <point x="1483.1089245162548" y="1475.0" />
+      <point x="-34.25" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.GameController" target="game.gameContoller.command.Command">
+      <point x="59.25" y="-17.5" />
+      <point x="1060.0245010081476" y="1360.0" />
+      <point x="1472.5621064426978" y="1360.0" />
+      <point x="1472.5621064426978" y="1030.0" />
+      <point x="1303.2352098356314" y="1030.0" />
+      <point x="55.55555555555543" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameModel" target="game.model.gameModel.GameIsStarted">
+      <point x="36.42857142857133" y="-17.5" />
+      <point x="1497.604934463581" y="1575.0" />
+      <point x="2027.1803530876832" y="1575.0" />
+      <point x="-37.75" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.Command" target="game.board.GameBoard">
+      <point x="-15.625" y="-17.5" />
+      <point x="1232.054654280076" y="845.0" />
+      <point x="605.6951688663854" y="845.0" />
+      <point x="62.34375" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsSuspended" target="game.model.gameModel.GameState">
+      <point x="-58.00000000000023" y="-17.5" />
+      <point x="1650.4303530876832" y="1330.0" />
+      <point x="1601.4779721353025" y="1330.0" />
+      <point x="5.3333333333332575" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.SingleSwitch" target="game.gameContoller.command.Command">
+      <point x="17.0" y="-17.5" />
+      <point x="982.1732938663854" y="1010.0" />
+      <point x="1206.0129876134092" y="1010.0" />
+      <point x="-41.66666666666674" y="17.5" />
+    </edge>
+    <edge source="game.button.ButtonPrototype" target="game.button.states.ButtonState">
+      <point x="71.75" y="-17.5" />
+      <point x="847.790302844578" y="200.0" />
+      <point x="944.040302844578" y="200.0" />
+      <point x="944.040302844578" y="55.0" />
+      <point x="898.165302844578" y="55.0" />
+      <point x="58.625" y="17.5" />
+    </edge>
+    <edge source="game.helpers.stylesManager.StylesManager" target="game.helpers.stylesManager.StylesManager">
+      <point x="-60.39999999999998" y="17.5" />
+      <point x="639.0232938663855" y="575.0" />
+      <point x="603.9232938663854" y="575.0" />
+      <point x="603.9232938663854" y="537.5" />
+      <point x="-75.5" y="-0.0" />
+    </edge>
+    <edge source="game.button.states.ActiveState" target="game.button.states.ButtonState">
+      <point x="32.25" y="-17.5" />
+      <point x="715.290302844578" y="75.0" />
+      <point x="814.415302844578" y="75.0" />
+      <point x="-25.125" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsWaiting" target="game.button.ButtonPrototype">
+      <point x="51.33333333333326" y="-17.5" />
+      <point x="1943.7636864210167" y="1290.0" />
+      <point x="1864.3107448107448" y="1290.0" />
+      <point x="1864.3107448107448" y="315.0" />
+      <point x="842.2710720753473" y="315.0" />
+      <point x="66.23076923076928" y="17.5" />
+    </edge>
+    <edge source="game.button.states.DisabledState" target="game.button.states.ButtonState">
+      <point x="-36.0" y="-17.5" />
+      <point x="803.540302844578" y="85.0" />
+      <point x="831.165302844578" y="85.0" />
+      <point x="-8.375" y="17.5" />
+    </edge>
+    <edge source="game.controller.MainController" target="game.board.ImageBoard">
+      <point x="-43.71428571428555" y="-17.5" />
+      <point x="1417.4620773207241" y="1740.0" />
+      <point x="189.49038461538476" y="1740.0" />
+      <point x="189.49038461538476" y="1050.0" />
+      <point x="166.74038461538476" y="1050.0" />
+      <point x="-16.875" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.CommandCreator" target="game.gameContoller.command.Command">
+      <point x="64.125" y="-17.5" />
+      <point x="1136.2120010081476" y="1155.0" />
+      <point x="1251.5621064426978" y="1155.0" />
+      <point x="1251.5621064426978" y="1050.0" />
+      <point x="1261.5685431689649" y="1050.0" />
+      <point x="13.888888888888914" y="17.5" />
+    </edge>
+    <edge source="game.board.GameBoard" target="game.button.ButtonCache">
+      <point x="-49.875" y="-17.5" />
+      <point x="493.4764188663854" y="710.0" />
+      <point x="372.5870010081476" y="710.0" />
+      <point x="52.5" y="17.5" />
+    </edge>
+    <edge source="game.gameContoller.command.MultiSwitch" target="game.button.ButtonPrototype">
+      <point x="-16.5" y="-17.5" />
+      <point x="1122.6732938663854" y="1000.0" />
+      <point x="1111.6732938663854" y="1000.0" />
+      <point x="1111.6732938663854" y="385.0" />
+      <point x="798.1172259215011" y="385.0" />
+      <point x="22.076923076923094" y="17.5" />
+    </edge>
+    <edge source="game.button.ButtonCache" target="game.button.TextButton">
+      <point x="-61.25" y="-17.5" />
+      <point x="258.8370010081476" y="615.0" />
+      <point x="106.53700100814763" y="615.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="game.model.gameModel.GameIsOver" target="game.button.ButtonPrototype">
+      <point x="-45.66666666666674" y="-17.5" />
+      <point x="1471.6922578495883" y="1380.0" />
+      <point x="1493.0920209726125" y="1380.0" />
+      <point x="1493.0920209726125" y="345.0" />
+      <point x="823.3479951522704" y="345.0" />
+      <point x="47.30769230769238" y="17.5" />
+    </edge>
+    <edge source="game.board.ImageBoard" target="game.board.GameBoard">
+      <point x="27.0" y="-17.5" />
+      <point x="210.61538461538476" y="845.0" />
+      <point x="489.3201688663854" y="845.0" />
+      <point x="-54.03125" y="17.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5865546218487394" x="847.753232507119" y="788.3048592634084" />
+  <SelectedNodes>
+    <node>game.button.ButtonCache</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
