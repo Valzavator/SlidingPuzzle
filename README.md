@@ -183,13 +183,13 @@
 
 -	 для класу ButtonPrototype: В даній реалізації ButtonPrototype виконує роль «Сontext», абстрактний клас ButtonState – «State», а класи-нащадки ActiveState та DisabledState –«ConcreteState». Оскільки наявно лише два стани кнопки, то відповідно при зміні стану – вони заміняють один одного. Кнопка в стані ActiveState – це кнопка, з якою може взаємодіяти гравець, в стані DisabledState – кнопка неактивна.
 
-    ![state1.png](/docs/images/state1.png)
+![state1.png](/docs/images/state1.png)
 
 -	 для класу GameModel: В даній реалізації GameModel виконує роль «Сontext», абстрактний клас GameState – «State», а класи-нащадки GameIsWaiting, GameIsStarted, GameIsSuspend та GameIsOver – «ConcreteState». Вся логіка гри зосереджена в різних станах, які реалізують одні операції та забороняють інші. Переходи між станами відбуваються в залежності від дій користувача.
 
-    ![state2.png](/docs/images/state2.png)
+![state2.png](/docs/images/state2.png)
     
-    ![conversion_chart.png](/docs/images/conversion_chart.png)
+![conversion_chart.png](/docs/images/conversion_chart.png)
 
 *Обґрунтування використання даного шаблону.* Шаблон був використаний для спрощення виконання операцій в залежності від внутрішнього стану об’єкта, а поведінка моделі гри залежить від того, в якому стані вона знаходиться у даний момент. Він дозволяє позбутися багатьох умовних операторів в коді.
 
